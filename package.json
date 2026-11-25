@@ -1,0 +1,32 @@
+{
+  "name": "wxt-starter",
+  "version": "0.0.0",
+  "private": true,
+  "description": "manifest.json description",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "compile": "tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.3",
+    "@types/react-dom": "19.3.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.1.5",
+    "web-ext": "^10.5.0",
+    "wxt": "^0.21.3"
+  },
+  "dependencies": {
+    "@betteroffice/docx-react": "0.6.0",
+    "@betteroffice/pptx-react": "0.6.0",
+    "@betteroffice/xlsx-react": "0.6.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  }
+}
